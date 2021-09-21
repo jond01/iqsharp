@@ -50,7 +50,7 @@ function Install-FromBuild() {
 
     # Get the IQ# tool installed.
     "Installing IQ# from $Env:NUGET_OUTDIR using version $Env:NUGET_VERSION" | Write-Verbose
-    dotnet tool install --global Microsoft.Quantum.IQSharp --version $Env:NUGET_VERSION --add-source $Env:NUGET_OUTDIR
+    dotnet tool install --global Microsoft.Quantum.IQSharp --version 0.18.2109164465-sdl --add-source $Env:NUGET_OUTDIR
     dotnet iqsharp install --user
 
     # Install the Q# wheels.
